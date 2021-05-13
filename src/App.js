@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import 'fontsource-roboto';
+import React, { useState, useEffect } from 'react';
+import Loaing from './components/Loaing';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Galery from './pages/Galery';
+import Office from './pages/Office';
+import Services from './pages/Services'
+import Footer from './components/Footer';
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [state, setstate] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => { setstate(true) }, 2000)
+  }, [])
+
+  if (state) {
+    return (
+      <>
+        <Nav />
+        <Home />
+        <Services />
+        <Galery />
+        <Office />
+        <Footer />
+      </>
+    );
+  } else {
+    return (
+      <Loaing />
+    );
+  }
 }
 
 export default App;

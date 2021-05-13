@@ -1,0 +1,11 @@
+.container-services{
+    display: block;
+}
+@media (min-width:700px){
+    .container-services{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+}

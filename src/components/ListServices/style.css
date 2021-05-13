@@ -1,0 +1,14 @@
+.container-list{
+    display: block;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 1%;
+    padding-right: 5%;
+}

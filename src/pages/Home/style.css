@@ -1,0 +1,18 @@
+.img-service{
+    width: 50vw;
+    display: block;
+    /* margin : auto; */
+    margin: auto;
+    /* background-color: red; */
+}
+body{
+    /* background-color:#02020f; */
+    margin: 0;
+    /* color:whitesmoke; */
+}
+@media (min-width:700px){
+    .img-service{
+        width: 25vw;
+    }
+    
+}

@@ -1,0 +1,23 @@
+.container-img {
+  display: flex;
+  padding: 10vh 5vw;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: yellow; */
+  align-items: center;
+}
+.img-item {
+  width: 250px;
+  margin: 30px 15px;
+  border: solid 2px rgb(46, 56, 66);
+  border-radius: 15px;
+  /* padding: 1%; */
+}
+@media (min-width: 700px) {
+  .container-img {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
